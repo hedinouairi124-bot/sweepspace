@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security problem
+    url: https://github.com/hedinouairi124-bot/sweepspace/security/advisories/new
+    about: Report it privately, please.
+  - name: Website
+    url: https://sweepspace.pages.dev
+    about: The film, measured savings and the Pro preview.
