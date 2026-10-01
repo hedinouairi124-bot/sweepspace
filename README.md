@@ -36,7 +36,7 @@ Coding agents burn most of their tokens re-reading files they have already seen.
 
 Reviewing changes took 14.6× fewer tokens, and type-checking 158× fewer.
 
-The tools agents get: `overview` · `search` · `outline` · `read_symbol` · `read_lines` · `impact` · `context` · `problems` · `check` · `changes`
+The tools agents get: `overview` · `search` · `grep` · `refs` · `outline` · `read_symbol` · `read_lines` · `impact` · `context` · `problems` · `check` · `changes`
 
 ## Features
 
@@ -102,13 +102,15 @@ Sweepspace checks your machine and sets how many agents, checks and previews it 
 1. Download `Sweepspace_x.y.z_x64-setup.exe` from the [latest release](https://github.com/hedinouairi124-bot/sweepspace/releases/latest), or from [the website](https://sweepspace.pages.dev/#download).
 2. Check the file (optional, recommended). In PowerShell, in your Downloads folder:
    ```powershell
-   Get-FileHash .\Sweepspace_0.1.0_x64-setup.exe
+   Get-FileHash .\Sweepspace_0.2.0_x64-setup.exe
    ```
    The hash must match `SHA256SUMS.txt` in the release.
 3. Run it. It installs for your Windows user and doesn't need admin rights.
 
 > [!NOTE]
 > The beta installer isn't code-signed yet, so Windows may not recognise it. Edge may say the file isn't commonly downloaded (choose **Keep**), and SmartScreen may say it protected your PC (choose **More info**, then **Run anyway**). Only do that if the hash matches.
+
+**Price:** free. This is the People's version: the complete core of Sweepspace, for everyone.
 
 **Requirements:** Windows 10 or 11, 64-bit. The agents you want to use (for example Claude Code or Codex) are installed separately and keep their own sign-in.
 
