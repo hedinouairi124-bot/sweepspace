@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.2.1
+
+A sturdier, faster People's version. Please report anything that breaks: https://github.com/hedinouairi124-bot/sweepspace/issues
+
+- Night paper: a dark theme (Settings > Appearance, or follow Windows).
+- Measure the savings on your own project: Savings > Measure with the real tools.
+- Savings switch: long command output from Claude Code is squeezed to what matters, only for commands your own permission rules already allow.
+- Antigravity can be connected to the map in one click.
+- Terminals: no more doubled lines, agent sessions no longer inherit another tool's settings, and a Sign in button when Claude Code isn't logged in.
+- MCP: `impact` and `refs` always use the latest files; outlines say when a file is generated or uses macros; empty answers say what isn't indexed.
+- Faster git status, checkpoints and map updates on big projects; a 12k-file project indexes in about a second.
+- Safer file handling: paths stay inside the project, tidy-up moves never overwrite a file, and settings are written atomically.
+- Clearer error messages, better contrast and keyboard focus.
+- Only one Sweepspace window at a time; uninstalling removes the hooks and MCP entries it added.
+- Codex token counts no longer double-count resumed sessions.
+
+
 ## 0.2.0 (the People's version)
 
 Free, for everyone who pays for their own tokens.
