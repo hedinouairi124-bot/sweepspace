@@ -1,5 +1,31 @@
 # Changelog
 
+## 0.3.0-beta.1 (Sweepspace Pro beta)
+
+The first Pro beta. **Pro is free for everyone while it's in beta**: no key, no trial, no sign-up, and the beta sends nothing to Sweepspace. Please report anything that breaks: https://github.com/hedinouairi124-bot/sweepspace/issues
+
+**Pro: the crew**
+- Hand a Board task to four bots: Scout researches (read only), Forge builds on its own branch, Warden reviews in a fresh session and blocks risky commands, Ledger keeps the budget with plain rules.
+- Runs headless on Claude Code or OpenCode, including OpenCode's free models.
+- Crew view: a live map of what each bot read and edited, a Done-when checklist ticked from real test results, a budget with a cap, and Whisper to send a note to the working bot.
+- Time travel: scrub the timeline, see what each bot saw, rewind to a checkpoint and branch from there.
+- `crew` command: run and answer the crew from any terminal.
+
+**Free for everyone**
+- Delegation: Claude Code (and any MCP agent) can hand easy and medium tasks to OpenCode's free models. Each job runs on its own branch with the crew's safety rules, shows as a helper pane next to the agent, and comes back with a diff and checks for the agent to merge, revise or discard. Needs OpenCode installed.
+- Map: Go, Java, C#, C/C++, PHP, Ruby, Vue, Svelte and Astro.
+- MCP: search ranks code by what it does and across naming styles; `refs` counts only real uses; `impact` says what it doesn't cover; answers carry when they were indexed; re-indexing only when files change.
+- Code: search in files, go to definition and find references.
+- Changes: push, pull, fetch and pull requests.
+- Checks: mypy, Ruff and ESLint when the project sets them up.
+- Terminals: WSL distros as shells, find in terminal output, a recent projects menu. Worktrees can run a setup command before the agent starts.
+
+**Know before you install**
+- This is a pre-release. It installs over 0.2.1 and keeps your projects and settings. It won't update itself to later betas yet; get them from https://sweepspace.pages.dev/pro/.
+- To go back to the stable version, install 0.2.1 from the latest release.
+- The installer is not code-signed, so Windows SmartScreen may warn. Check the hash first.
+
+
 ## 0.2.1
 
 A sturdier, faster People's version. Please report anything that breaks: https://github.com/hedinouairi124-bot/sweepspace/issues
