@@ -1,5 +1,32 @@
 # Changelog
 
+## 0.3.0-beta.2 (Sweepspace Pro beta)
+
+Fixes for the first Pro beta, and the crew closer to its preview film. Pro is still free for everyone during the beta. If you have beta.1, install this over it.
+
+**Fixed**
+- Warden no longer blocks harmless text as a "secret": the words "key" or "pem" in a change story, a search or a commit message stalled the crew, waiting for Allow once. Real key files (`server.key`, `.npmrc`, `id_rsa`) are still protected.
+- The beta ignores a trial left over from an earlier build, so the crew isn't held to one project.
+- The live map picks up every new step as it happens; it no longer lags behind the feed.
+- The timeline starts with Scout (the new-branch line was counted as Forge's turn).
+- The Crew view stays light under a busy feed: no more long pauses, steady memory.
+- `crew trust` says it worked instead of "Sweepspace closed".
+
+**New**
+- Change story: each group opens its own lines from the crew's branch.
+- A gold Run with crew on every To do card, and Ctrl+Shift+R on the card you're on.
+- Your call by keyboard: M (asks first), S to send back with a note, T to take over.
+- A run that ended early shows the last real test result instead of empty rings.
+- Desktop notifications when the crew needs you: a plan to approve, a verdict, a block, the cap, or a failure.
+- Ledger's estimate follows measured runs: about 100k–380k tokens before the brief (it was 150k–450k).
+
+**Measured** (three tasks on a small sample project, every run passing its own type check and tests): the crew used the same tokens as one top-model agent (386k against 384k), cost about 17% less at Claude API prices because only Forge gets the top model, reviewed every change, and took about 2.7 times longer.
+
+**Know before you install**
+- A pre-release: it installs over 0.2.1 or beta.1 and keeps your projects and settings. It doesn't update itself to later betas yet; get them from https://sweepspace.pages.dev/pro/.
+- The installer is not code-signed, so Windows SmartScreen may warn. Check the hash first.
+
+
 ## 0.3.0-beta.1 (Sweepspace Pro beta)
 
 The first Pro beta. **Pro is free for everyone while it's in beta**: no key, no trial, no sign-up, and the beta sends nothing to Sweepspace. Please report anything that breaks: https://github.com/hedinouairi124-bot/sweepspace/issues
