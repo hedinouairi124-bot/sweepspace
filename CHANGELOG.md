@@ -1,5 +1,91 @@
 # Changelog
 
+## 0.3.0-beta.5 (Sweepspace Pro beta)
+
+Bots can now do real work on your PC. Pro is still free for everyone during the beta. Install over any earlier version; your projects and settings stay.
+
+**Bots that work on your PC**
+- Every bot has a new "Where it works" choice: This PC (the new default), its own computer (Docker), or read only.
+- On this PC a bot runs commands and edits files in your project like an agent in a terminal. Its browser is an Edge window of its own that keeps its logins; your own Edge profile is never touched.
+- It asks before anything risky: uploads, deleting folders, pushing, reading keys or `.env` files, files outside the project, changing its own rules or git hooks, and web addresses stuffed with data. The card shows the whole command.
+- Claude Code bots can use your own MCP servers from your Claude Code settings. Lookups run freely, and a tool that changes something asks first.
+- OpenCode bots get the same powers on free models, and a busy model is swapped for another free one by itself. OpenCode can't stop and ask mid-run, so a risky step is refused and the bot tells you what it wanted to do.
+- No Docker? Bots you hire work on your PC from the start. A bot set up for its own computer works here while Docker is off, and asks before every command.
+- The first browser job fetches Node.js if your PC doesn't have it.
+
+**Obsidian Glass**
+- A new look for every view, lit by your agents as they work. Paper is still in Settings.
+
+**Faster and steadier**
+- Terminals, the map and MCP calls respond faster, and the crew counts changed lines without waiting on git.
+- Team chat no longer loses a message when two agents post at once, and agents still running in a project you left stay out of the new one's room.
+- The crew retries only on real busy-model errors, and keeps a Pause or Raise cap you press while it waits.
+- A terminal's last lines now arrive before it shows as exited.
+
+**New guide**
+- https://sweepspace.pages.dev/guide/ covers setup and the harder jobs: a bot on your PC, browsers that stay logged in, a CEO with a team, free models only, and your own rules.
+
+**Know before you install**
+- A pre-release: it installs over 0.2.1 or an earlier beta. Later betas are on https://sweepspace.pages.dev/pro/.
+- The installer isn't code-signed, so Windows SmartScreen may warn. Check the hash first.
+
+
+
+
+## 0.3.0-beta.4 (Sweepspace Pro beta)
+
+Works out of the box, free or paid. Pro is still free for everyone during the beta. If you have an earlier beta, install this over it.
+
+**Nothing to set up by hand**
+- Getting ready: on first start Sweepspace fetches what's missing by itself (Git and OpenCode) from their official sources, checks each download against its published checksum, and shows its progress. Settings › Getting ready lists what's there.
+- Any agent in one click: Start an agent › Add more agents › Install. Claude Code, Codex, Gemini CLI, Antigravity, Kimi and Aider install by themselves (Node.js or uv are fetched first if your PC has neither) and start when they're ready.
+- Anything missing says so with an Install button next to it, in the crew's check and in a bot's conversation.
+- Fresh PCs: agents get a Git author when none is set, so commits never fail.
+
+**Free with OpenCode, no subscription**
+- Without Claude Code, every bot, the CEO's hires and the crew run on OpenCode's free models.
+- Docker is optional: without it bots work on your PC (they read the project and the web). With Docker running they also get a computer of their own.
+
+**The Sweepspace MCP connects itself**
+- Every installed agent gets Sweepspace's map tools on start, OpenCode included, and a registration left by an old install is repaired. An agent you switch off in Savings stays off.
+
+**Bots**
+- Switch a bot's brain from its conversation: Claude Code (Sonnet, Opus, Haiku) or OpenCode and its free models.
+- The CEO's team works as one: each bot gets the goal, what its teammates are doing and what the team found so far; reports reach the CEO by themselves; new wait_for_team.
+- Fixes from real runs: a CEO waiting on the crew is no longer stopped as idle; a crew paused at its token cap is raised once instead of read as done; testers are told where the crew's branch is in their computer; bots may read the project map and save documents in `.sweepspace/team`.
+- Replies show headings, lists, tables and code. The bot editor scrolls on small windows and Save stays visible.
+
+**Smaller screens**
+- The project name stays in the top bar, and the crew's badges and map labels no longer overlap.
+
+
+
+## 0.3.0-beta.3 (Sweepspace Pro beta)
+
+Bots arrive, and the crew's builder gets a computer of its own. Pro is still free for everyone during the beta. If you have an earlier beta, install this over it.
+
+**New: Bots**
+- Coworkers that remember the conversation, work on a computer of their own, and ask you before anything that sends, posts, pays or touches a secret. Open **Bots** in the top bar.
+- Hire one from the catalog (CI Doctor, App Tester, Dependency Keeper, Docs Researcher, Issue Triage, Web Helper) or write your own. Each bot is a small Markdown file: in `.sweepspace/bots/` for a project (shared through git), or yours for every project.
+- Its own computer: a Linux desktop in Docker that keeps its browser logins. Watch it live in "Its screen", take control any time, and hand it back.
+- The browser reads pages as text with named elements (Playwright), so bots click what the page calls "Post comment" instead of guessing from screenshots, for far fewer tokens.
+- Asks first: sending, posting and uploading wait for your OK in a card with Allow once, Always allow and Deny. Passwords, payments, security settings, pushing to the main branch and secret files always ask, whatever the rules say. Rules live in `.sweepspace/rules.yaml`.
+- "What it did": every action with the rule that decided it. Budgets per run and per day; near the end of a run the bot is told to wrap up instead of being cut off.
+- Runs on Claude Code, or on OpenCode's free models inside the bot's computer. A bot whose free model is busy retries, then tries its backup model.
+- If Sweepspace closes during a run, the bot says so, and Continue picks it up.
+
+**New: agent computers for the crew and terminals**
+- "Give Forge its own computer" when you hand a task to the crew: its commands, tests and browser checks run in a Linux desktop, and Ledger checks its work there too.
+- "Terminal in its own computer" in the new-terminal menu, with a Desktop button to watch it.
+
+**Know before you install**
+- Bots with a computer and agent computers need Docker Desktop (free for personal use). The first computer builds once: about 2.8 GB, a few minutes on a fast connection. About 700 MB of free memory per running computer; at most two run at once.
+- A pre-release: it installs over 0.2.1 or an earlier beta and keeps your projects and settings. It doesn't update itself to later betas yet; get them from https://sweepspace.pages.dev/pro/.
+- The installer is not code-signed, so Windows SmartScreen may warn. Check the hash first.
+
+
+
+
 ## 0.3.0-beta.2 (Sweepspace Pro beta)
 
 Fixes for the first Pro beta, and the crew closer to its preview film. Pro is still free for everyone during the beta. If you have beta.1, install this over it.
