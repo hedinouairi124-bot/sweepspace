@@ -1,5 +1,55 @@
 # Changelog
 
+## 0.3.0-beta.6 (Sweepspace Pro beta)
+
+Bots that remember you, learn skills, run on a schedule and work together. Pro is still free for everyone during the beta. Install over any earlier version; your projects, bots and settings stay.
+
+**A new Bots view**
+- Laid out like a messenger: pinned bots on top, sections you name, channels, hidden bots, search, unread dots and each bot's last message.
+- Right-click a bot to pin it, move it to a section, mark it unread, make it your main bot, edit it, duplicate it, share it as a template, copy its conversation ID, set its notifications, hide it or delete it.
+- A details panel next to the conversation: its screen, what it's for, its routines, its memory, skills, shared files and everything it did.
+
+**Memory**
+- Two notebooks: what every bot knows about you, and what only this bot knows. Bots save notes on their own (or say "remember…"), and you can edit or delete any note.
+- A new bot says hello and asks a few questions about you.
+
+**Skills**
+- A shared library of recipes every bot can follow. Type / in a message to use one. Bots save new skills and update them when you give feedback on the result.
+- Bring in your own Claude Code skills from the library.
+- Teach by showing (new): do a task once in an Edge window while it records your steps, and the bot turns the recording into a skill.
+
+**Routines**
+- Every few minutes, at a time on the days you pick, or when a webhook on this PC is called. A routine can have several triggers.
+- Run now, and a run history; click a run to jump to it in the conversation.
+- Ask a bot "every weekday at 9, …" and it proposes the routine; it's only saved after you approve it.
+- Routines run while Sweepspace is open. One that comes due while its bot is busy is skipped and noted.
+
+**Working together**
+- Every bot knows its teammates and can hand work to one. Your main bot (★) sends each request to the right teammate.
+- Channels: group chats where bots answer in turn and @mention each other.
+- Reply to a specific message, @mention a bot, and see notices when a bot saves a memory, a skill or a routine.
+
+**Drafts**
+- Before an email, a message or a post goes out in your name, you get a card to edit, then Send or Discard. The send you approved goes through without asking twice.
+
+**Plugins and templates**
+- Plugins shows your apps (your MCP servers in Claude Code) and which bots may use each. Add Notion, Linear, GitHub and others in one click, then sign in once in Claude Code with /mcp.
+- Share a bot as a template file, and import one after a look at its instructions, memories, skills and routines.
+
+**OpenCode models stay current**
+- OpenCode retired the free models bots used by default. Bots now use "Best free model": the best free model OpenCode offers that day. The list refreshes by itself every few hours, or with Refresh in the model menu. A bot whose model was retired moves to a new one and says so.
+
+**Also**
+- This week's token use in the sidebar, desktop notifications per bot, and a shared team folder with context/ and projects/.
+- Fixed: editing the CEO in the bot form took away its right to hire and assign.
+
+**Know before you install**
+- A pre-release: it installs over 0.2.1 or any earlier beta. Later betas are on https://sweepspace.pages.dev/pro/.
+- Newest and least tried: teach by showing, and adding apps from Plugins. Tell us how they go: https://github.com/hedinouairi124-bot/sweepspace/issues
+- The installer isn't code-signed, so Windows SmartScreen may warn (More info, then Run anyway). Check the hash first.
+
+SHA-256 of the installer: `deebbe75403edcc3fe70cd9c55f4d58c08094169df4b24a01a1e30d695b14f8e`
+
 ## 0.3.0-beta.5 (Sweepspace Pro beta)
 
 Bots can now do real work on your PC. Pro is still free for everyone during the beta. Install over any earlier version; your projects and settings stay.
