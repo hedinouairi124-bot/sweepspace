@@ -4,8 +4,6 @@
 
 # Sweepspace
 
-**Build big. Spend less.**
-
 A desktop workspace for AI coding agents. Run Claude Code, Codex, Gemini and any CLI side by side,<br>
 and give every agent a live map of your project so it reads the one function it needs instead of whole files.
 
@@ -16,7 +14,7 @@ and give every agent a live map of your project so it reads the one function it 
 [![Downloads](https://img.shields.io/github/downloads/hedinouairi124-bot/sweepspace/total?color=1e6b4f&labelColor=1c1b18)](https://github.com/hedinouairi124-bot/sweepspace/releases)
 ![Platform](https://img.shields.io/badge/platform-Windows%20x64-1e6b4f?labelColor=1c1b18)
 
-<a href="https://sweepspace.pages.dev/#film"><img src="assets/film-poster.jpg" alt="Watch the 82-second film" width="820"></a>
+<a href="https://sweepspace.pages.dev/#film"><img src="assets/film-poster.jpg" alt="Watch the film" width="820"></a>
 
 <sub><a href="https://sweepspace.pages.dev/#film">▶ Watch the film</a> · <a href="https://sweepspace.pages.dev">sweepspace.pages.dev</a></sub>
 
@@ -26,15 +24,15 @@ and give every agent a live map of your project so it reads the one function it 
 
 ## Why
 
-Coding agents burn most of their tokens re-reading files they have already seen. Sweepspace runs a small local MCP server that your agents connect to in one click. Instead of opening whole files, they ask for exactly what they need.
+Coding agents often reopen files they have already read. Sweepspace runs a small local MCP server that your agents connect to in one click, so they can ask for one function or a file outline instead of a whole file.
 
-| Measured on a real task (12 steps, Sweepspace's own codebase) | Tokens |
+| One task, 12 steps, Sweepspace's own code | Tokens |
 | --- | ---: |
 | Opening each file once, in full, plus the compiler's full output | 35,777 |
 | **With Sweepspace** | **3,833** |
 | | **9.3× fewer** |
 
-Reviewing changes took 14.6× fewer tokens, and type-checking 158× fewer.
+Reviewing changes took 14.6× fewer tokens, and type-checking 158× fewer. That's one task on one repo, so yours will differ. The app measures your own under Savings, then Measure.
 
 The tools agents get: `overview` · `search` · `grep` · `refs` · `outline` · `read_symbol` · `read_lines` · `impact` · `context` · `problems` · `check` · `changes`
 
@@ -44,14 +42,14 @@ The tools agents get: `overview` · `search` · `grep` · `refs` · `outline` ·
 <tr>
 <td width="50%" valign="top">
 
-### Every agent. One window.
+### Run agents side by side
 Claude Code, Codex, Gemini CLI, OpenCode, Aider, Kimi and any shell, in a grid of real terminals. Each agent can work on its own branch.
 
 </td>
-<td width="50%"><img src="assets/app-agents.jpg" alt="Four agents side by side"></td>
+<td width="50%"><img src="assets/s-terminals.jpg" alt="Three agents side by side"></td>
 </tr>
 <tr>
-<td><img src="assets/app-map-inspector.jpg" alt="The Neural Map"></td>
+<td><img src="assets/hero-map.jpg" alt="The live map"></td>
 <td valign="top">
 
 ### A live map of your project
@@ -62,17 +60,17 @@ Every file, import and symbol, coloured by health: broken, at risk, verified. Ag
 <tr>
 <td valign="top">
 
-### Hand out tasks. Review the results.
+### A task board
 A board for agent work: queue tasks, run them on separate branches, review and merge.
 
 </td>
-<td><img src="assets/app-board.jpg" alt="Task board"></td>
+<td><img src="assets/s-board.jpg" alt="Task board"></td>
 </tr>
 <tr>
-<td><img src="assets/app-changes.jpg" alt="Changes view"></td>
+<td><img src="assets/s-changes.jpg" alt="Changes view"></td>
 <td valign="top">
 
-### See every change before it lands
+### Review every change
 Diffs per agent and per branch, with checkpoints you can roll back to.
 
 </td>
@@ -80,18 +78,18 @@ Diffs per agent and per branch, with checkpoints you can roll back to.
 <tr>
 <td valign="top">
 
-### A real editor and a live preview
-Edit code next to your agents and watch your dev server update in place.
+### See what you saved
+The Savings screen counts the tokens the map saved, by tool and by day. Press Measure to test your own project.
 
 </td>
-<td><img src="assets/app-code.jpg" alt="Editor and preview"></td>
+<td><img src="assets/s-savings.jpg" alt="The Savings screen"></td>
 </tr>
 <tr>
-<td><img src="assets/app-machine.jpg" alt="Machine check"></td>
+<td><img src="assets/s-tidy.jpg" alt="Tidy"></td>
 <td valign="top">
 
-### Tuned to your PC
-Sweepspace checks your machine and sets how many agents, checks and previews it can run smoothly.
+### Clean up a project
+Finds committed secrets, junk files and duplicates, shows every change first, and one click undoes it.
 
 </td>
 </tr>
@@ -102,7 +100,7 @@ Sweepspace checks your machine and sets how many agents, checks and previews it 
 1. Download `Sweepspace_x.y.z_x64-setup.exe` from the [latest release](https://github.com/hedinouairi124-bot/sweepspace/releases/latest), or from [the website](https://sweepspace.pages.dev/#download).
 2. Check the file (optional, recommended). In PowerShell, in your Downloads folder:
    ```powershell
-   Get-FileHash .\Sweepspace_0.2.0_x64-setup.exe
+   Get-FileHash .\Sweepspace_0.2.1_x64-setup.exe
    ```
    The hash must match `SHA256SUMS.txt` in the release.
 3. Run it. It installs for your Windows user and doesn't need admin rights.
@@ -110,7 +108,7 @@ Sweepspace checks your machine and sets how many agents, checks and previews it 
 > [!NOTE]
 > The beta installer isn't code-signed yet, so Windows may not recognise it. Edge may say the file isn't commonly downloaded (choose **Keep**), and SmartScreen may say it protected your PC (choose **More info**, then **Run anyway**). Only do that if the hash matches.
 
-**Price:** free. This is the People's version: the complete core of Sweepspace, for everyone.
+**Price:** free.
 
 **Requirements:** Windows 10 or 11, 64-bit. The agents you want to use (for example Claude Code or Codex) are installed separately and keep their own sign-in.
 
@@ -122,7 +120,11 @@ Sweepspace checks your machine and sets how many agents, checks and previews it 
 
 ## Sweepspace Pro
 
-A paid tier in the works: bots, new ways to delegate, and team features. [See the preview](https://sweepspace.pages.dev/#pro).
+In beta and free during the beta: a crew that takes a task to a reviewed branch, and bots that work on your PC and ask before risky actions. The planned price after the beta is $8 a month. [Details](https://sweepspace.pages.dev/pro/).
+
+## Who makes this
+
+Made by [Hedi Nouairi](https://github.com/hedinouairi124-bot), a CS engineering student in Tunisia. Bugs and ideas go in [Issues](https://github.com/hedinouairi124-bot/sweepspace/issues).
 
 ## Feedback and support
 
