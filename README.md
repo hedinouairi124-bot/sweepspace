@@ -16,7 +16,7 @@ and give every agent a live map of your project so it reads the one function it 
 
 <a href="https://sweepspace.pages.dev/"><img src="assets/hero-map.jpg" alt="Sweepspace with the live map of an example project" width="820"></a>
 
-<sub><a href="https://sweepspace.pages.dev/#film">▶ Watch the film</a> · <a href="https://sweepspace.pages.dev">sweepspace.pages.dev</a></sub>
+<sub><a href="https://sweepspace.pages.dev">sweepspace.pages.dev</a></sub>
 
 </div>
 
