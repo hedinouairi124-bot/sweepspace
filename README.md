@@ -14,7 +14,7 @@ and give every agent a live map of your project so it reads the one function it 
 [![Downloads](https://img.shields.io/github/downloads/hedinouairi124-bot/sweepspace/total?color=1e6b4f&labelColor=1c1b18)](https://github.com/hedinouairi124-bot/sweepspace/releases)
 ![Platform](https://img.shields.io/badge/platform-Windows%20x64-1e6b4f?labelColor=1c1b18)
 
-<a href="https://sweepspace.pages.dev/#film"><img src="assets/film-poster.jpg" alt="Watch the film" width="820"></a>
+<a href="https://sweepspace.pages.dev/"><img src="assets/hero-map.jpg" alt="Sweepspace with the live map of an example project" width="820"></a>
 
 <sub><a href="https://sweepspace.pages.dev/#film">▶ Watch the film</a> · <a href="https://sweepspace.pages.dev">sweepspace.pages.dev</a></sub>
 
