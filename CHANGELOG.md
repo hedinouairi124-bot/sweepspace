@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.3.0-beta.7 (Sweepspace Pro beta)
+
+A new look, and a crew that spends far fewer tokens. Pro is still free for everyone during the beta. Install over any earlier version; your projects, bots and settings stay.
+
+**A calmer, flatter design**
+- Navigation moved to a sidebar on the left, grouped into Work, Code and Project, with your running agents listed under Agents.
+- One icon set across the app, and each agent shows its own logo: Claude Code, Codex, Gemini CLI, Antigravity, Kimi and OpenCode.
+- Obsidian Glass is now flat and dark, with colour only where it means something. The glow, the gradients and the shouting capital labels are gone.
+- Quieter screens: Savings folds its guide and tools away, the map panel and team chat open only when you ask, and empty screens say what to do in one line.
+
+**A leaner crew**
+- Each crew bot gets only the tools its job needs and its own short instructions. The fixed cost of every turn dropped from about 13-15k tokens to 4.5-8k.
+- Light runs (new): for a one-sentence task, Auto skips Scout, and Warden only reviews a change bigger than 60 lines. The project's own tests and type checker are the checks.
+- On our three-task benchmark, all passing: the full crew used 41% fewer tokens than beta 6 and finished about twice as fast. Light runs used 66% fewer.
+- The budget cap now follows the estimate for the run you picked, light or full.
+
+**Bots**
+- Starter tasks for every bot in the catalog, so a new bot has something useful to do right away.
+- Bots plan first on bigger jobs and say clearly when something failed instead of going quiet.
+- Bots and Crew load the first time you open them, so the app starts faster.
+
 ## 0.3.0-beta.6 (Sweepspace Pro beta)
 
 Bots that remember you, learn skills, run on a schedule and work together. Pro is still free for everyone during the beta. Install over any earlier version; your projects, bots and settings stay.
